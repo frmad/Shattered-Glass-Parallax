@@ -1,0 +1,4 @@
+parallaxText.style.transform = `translate(-50%, calc(-50% + ${scrollPosition * scrollSpeedFactor}px))`;
+    Når brugeren scroller, opdateres scrollPosition, og teksten flyttes nedad med en hastighed, der bestemmes af scrollSpeedFactor. Teksten starter fra sin centrale position (defineret af translate(-50%, -50%)) og bevæger sig yderligere ned ad skærmen, jo længere brugeren scroller.
+
+    Ved at anvende calc(-50% + ...) opnår man, at teksten altid vil være centreret horisontalt, mens den bevæger sig vertikalt nedad i takt med scrollingen.
